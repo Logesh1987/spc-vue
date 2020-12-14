@@ -1,9 +1,7 @@
 # gr-sp-testing
 
-## Project setup
-```
-yarn install
-```
+## Report Check
+https://logesh1987.github.io/gr-spc-build-test/dist/report.html
 
 ### Compiles and hot-reloads for development
 ```
