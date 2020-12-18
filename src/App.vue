@@ -29,7 +29,7 @@ export default {
   mounted: function() {
     axios
       .get(
-        "https://raw.githubusercontent.com/Logesh1987/gr-sp-vue/master/campaign.json"
+        "https://logesh1987.github.io/spc-vue/src/api.json"
       )
       .then(({ data }) => {
         this.$store.commit("updateLoggedIn", data.is_user_logged_in);
