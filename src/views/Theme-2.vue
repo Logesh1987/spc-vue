@@ -15,27 +15,7 @@
             class="campaign-beforeLogin-container"
             :class="'theme-'+campaignData.theme_settings.bg_theme"
           >
-            <span v-if="campaignData.theme_settings.bg_theme == '1'">
-              <svg viewBox="0 0 136.8 173.4" class="top-bg" preserveAspectRatio="xMinYMin meet">
-                <g>
-                  <path
-                    class="st0"
-                    d="M0.1,0.4h136.8c0,0-29.4,30.3-64.4,49s-64.7,90-72.3,93.7V0.4z"
-                  />
-                  <path class="st1" d="M104.4,0.4c0,0-47.7,23.3-67,60.3S7.8,161.4,0.4,173.1" />
-                </g>
-              </svg>
-              <svg viewBox="0 0 171.5 199.5" class="bottom-bg" preserveAspectRatio="xMaxYMax meet">
-                <g>
-                  <path
-                    class="st0"
-                    d="M0.6,199.3h170.3V0c0,0-13.7,44-70.7,79.3C52.4,109-6.4,163.7,0.6,199.3z"
-                  />
-                  <path class="st1" d="M33.6,199c0,0,110.3-37,138.7-116.3" />
-                </g>
-              </svg>
-            </span>
-            <span v-if="campaignData.theme_settings.bg_theme == '2'">
+            <span>
               <svg viewBox="0 0 482 65" class="top-bg" preserveAspectRatio="xMinYMin meet">
                 <polygon
                   points="0,55.4 3.3,58.7 8.3,53.7 13.4,58.7 18.5,53.7 23.5,58.7 28.6,53.7 33.6,58.7 38.7,53.7 43.8,58.7 48.8,53.7 
@@ -58,92 +38,6 @@
                   style="opacity: 0.5;"
                   points="482,23.7 400.1,105.5 294.6,0 189.2,105.5 83.7,0 0,83.7 0,156.4 482,156.4 "
                 />
-              </svg>
-            </span>
-            <span v-if="campaignData.theme_settings.bg_theme == '3'">
-              <svg viewBox="0 0 482 654" preserveAspectRatio="xMinYMin slice">
-                <ellipse id="Oval" class="st0" cx="241" cy="288.5" rx="225" ry="224.5" />
-              </svg>
-            </span>
-            <span v-if="campaignData.theme_settings.bg_theme == '4'">
-              <svg viewBox="0 0 482 242.4" preserveAspectRatio="xMaxYMax meet">
-                <g class="g1">
-                  <path
-                    d="M336.6,122.9c-89-51.5-258.4,9.7-336.6,94.2v25.3h432.3C417.1,193.7,384.3,150.4,336.6,122.9z"
-                  />
-                  <path
-                    id="Oval_Copy_6"
-                    d="M133.4,48.4c-24.6,5.7-44.2,49.9-38.4,74.8c5.7,24.9,20.4,3.3,45-2.4s54.1-12.6,48.4-37.5
-                      C182.6,58.3,158,42.7,133.4,48.4z"
-                  />
-                </g>
-                <g class="g2">
-                  <path
-                    d="M482,144.1c-24.6-47.1-103.2,9.3-201.6,9.3c-54.4,0-113.7,0.1-162.2,11.6c-16.7-27.5-42.8-49.5-75.6-60.9
-c-13-4.5-27.4-5.6-42.6-4.1v142.4h482V144.1z"
-                  />
-                  <path d="M482,0c-32.9,28.3-51.3,61.1-28.3,101c7.7,13.4,17.4,25.1,28.3,34.9V0z" />
-                </g>
-              </svg>
-            </span>
-            <span v-if="campaignData.theme_settings.bg_theme == '5'">
-              <svg viewBox="0 0 482 654" preserveAspectRatio="xMinYMin slice">
-                <path
-                  class="p1"
-                  d="M44,638.9V633L0,648.1v5.9L44,638.9z M44,615.9V610L0,625.1v5.9L44,615.9z M44,591.9V586
-L0,601.1v5.9L44,591.9z M44,568.9V563L0,578.1v5.9L44,568.9z M44,544.9V539L0,554.1v5.9L44,544.9z M44,520.9V515L0,530.1v5.9
-L44,520.9z M44,497.9V492L0,507.1v5.9L44,497.9z M44,473.9V468L0,483.1v5.9L44,473.9z M44,450.9V445L0,460.1v5.9L44,450.9z
-M44,426.9V421L0,436.1v5.9L44,426.9z M44,403.9V398L0,413.1v5.9L44,403.9z M44,379.9V374L0,389.1v5.9L44,379.9z M44,356.9V351
-L0,366.1v5.9L44,356.9z M44,332.9V327L0,342.1v5.9L44,332.9z M44,311.9V306L0,321.1v5.9L44,311.9z M44,288.9V283L0,298.1v5.9
-L44,288.9z M44,264.9V259L0,274.1v5.9L44,264.9z M44,241.9V236L0,251.1v5.9L44,241.9z M44,217.9V212L0,227.1v5.9L44,217.9z
-M44,193.9V188L0,203.1v5.9L44,193.9z M44,170.9V165L0,180.1v5.9L44,170.9z M44,146.9V141L0,156.1v5.9L44,146.9z M44,123.9V118
-L0,133.1v5.9L44,123.9z M44,99.9V94L0,109.1v5.9L44,99.9z M44,76.9V71L0,86.1V92L44,76.9z M44,52.9V47L0,62.1V68L44,52.9z M44,29.9
-V24L0,39.1V45L44,29.9z M44,5.9V0L0,15.1V21L44,5.9z"
-                />
-                <path
-                  class="p2"
-                  d="M482,654v-5.9L438,633v5.9L482,654z M482,631v-5.9L438,610v5.9L482,631z M482,607
-                  v-5.9L438,586v5.9L482,607z M482,584v-5.9L438,563v5.9L482,584z M482,560v-5.9L438,539v5.9L482,560z M482,536v-5.9L438,515v5.9
-L482,536z M482,513v-5.9L438,492v5.9L482,513z M482,489v-5.9L438,468v5.9L482,489z M482,466v-5.9L438,445v5.9L482,466z M482,442
-v-5.9L438,421v5.9L482,442z M482,419v-5.9L438,398v5.9L482,419z M482,395v-5.9L438,374v5.9L482,395z M482,372v-5.9L438,351v5.9
-L482,372z M482,348v-5.9L438,327v5.9L482,348z M482,327v-5.9L438,306v5.9L482,327z M482,304v-5.9L438,283v5.9L482,304z M482,280
-v-5.9L438,259v5.9L482,280z M482,257v-5.9L438,236v5.9L482,257z M482,233v-5.9L438,212v5.9L482,233z M482,209v-5.9L438,188v5.9
-L482,209z M482,186v-5.9L438,165v5.9L482,186z M482,162v-5.9L438,141v5.9L482,162z M482,139v-5.9L438,118v5.9L482,139z M482,115
-v-5.9L438,94v5.9L482,115z M482,92v-5.9L438,71v5.9L482,92z M482,68v-5.9L438,47v5.9L482,68z M482,45v-5.9L438,24v5.9L482,45z
-M482,21v-5.9L438,0v5.9L482,21z"
-                />
-              </svg>
-            </span>
-            <span v-if="campaignData.theme_settings.bg_theme == '6'">
-              <svg viewBox="0 0 482 654" preserveAspectRatio="xMinYMin slice">
-                <g class="g1">
-                  <path style="opacity: 0.1;" d="M54,0v72H0V0H54" />
-                  <path style="opacity: 0.3;" d="M0,144h128V72H0V144z" />
-                  <path style="opacity: 0.12;" d="M200,447h72v-72h-72V447z" />
-                  <path style="opacity: 0.05;" d="M342,307h72V90h-72V307z" />
-                  <path style="opacity: 0.06;" d="M198,654h-72V520.4h72V654" />
-                </g>
-                <g class="g2">
-                  <path style="opacity: 0.2;" d="M482,374.9v71.6h-70.2v-71.6H482" />
-                  <path style="opacity: 0.15;" d="M0,145h54v72H0V145" />
-                  <path style="opacity: 0.15;" d="M414,306v72H200v-72H414" />
-                  <path style="opacity: 0.25;" d="M414,233h68v-72h-68V233z" />
-                  <path style="opacity: 0.17;" d="M197,654v-62.1h72V654H197" />
-                </g>
-                <g class="g3">
-                  <path style="opacity: 0.15;" d="M127,72h214V0H127V72z" />
-                  <path style="opacity: 0.2;" d="M127.6,376.9v-71.8H199v71.8L127.6,376.9" />
-                  <path style="opacity: 0.08;" d="M272,307h72v-72h-72V307z" />
-                  <path style="opacity: 0.13;" d="M414,654h-72V446.9h72V654" />
-                  <path style="opacity: 0.16;" d="M0,521h129v-72H0V521z" />
-                </g>
-                <g class="g4">
-                  <path style="opacity: 0.05;" d="M199.1,71.4h71.4v71.7h-71.4V71.4" />
-                  <path style="opacity: 0.1;" d="M342,449v72H128v-72H342" />
-                  <path style="opacity: 0.06;" d="M0,654h59v-72H0V654z" />
-                  <path style="opacity: 0.15;" d="M414,593v-72h72v72H410" />
-                  <path style="opacity: 0.05;" d="M0,520.7h56.5v71.5H0V520.7" />
-                </g>
               </svg>
             </span>
             <section
@@ -225,7 +119,7 @@ M482,21v-5.9L438,0v5.9L482,21z"
                     <a
                       href="#"
                       v-if="campaignData.competition.terms_text_type === 'text'"
-                      @click.prevent="pageView = 'terms'"
+                      @click.prevent="updatePageView('terms')"
                       class="tc"
                     >
                       <small>{{lang.terms_and_condition}}</small>
@@ -243,7 +137,7 @@ M482,21v-5.9L438,0v5.9L482,21z"
                     <a
                       href="#"
                       v-if="campaignData.competition.privacy_text_type === 'text'"
-                      @click.prevent="pageView = 'policy'"
+                      @click.prevent="updatePageView('policy')"
                       class="tc"
                     >
                       <small>{{lang.privacy_policy}}</small>
@@ -264,14 +158,14 @@ M482,21v-5.9L438,0v5.9L482,21z"
               <button
                 v-if="campaignData.is_winners == '1'"
                 class="btn-winners"
-                @click.prevent="pageView = 'winner'"
+                @click.prevent="updatePageView('winner')"
               >
                 <span>{{lang.winners}}</span>
               </button>
               <button
                 v-if="campaignData.is_prizes == '1'"
                 class="btn-prizes"
-                @click.prevent="pageView = 'prize'"
+                @click.prevent="updatePageView('prize')"
               >
                 <span>{{lang.prizes}}</span>
               </button>
@@ -281,7 +175,7 @@ M482,21v-5.9L438,0v5.9L482,21z"
                 <a
                   href="#"
                   v-if="campaignData.competition.terms_text_type === 'text'"
-                  @click.prevent="pageView = 'terms'"
+                  @click.prevent="updatePageView('terms')"
                   class="tc"
                 >
                   <small>{{lang.terms_and_condition}}</small>
@@ -299,7 +193,7 @@ M482,21v-5.9L438,0v5.9L482,21z"
                 <a
                   href="#"
                   v-if="campaignData.competition.privacy_text_type === 'text'"
-                  @click.prevent="pageView = 'policy'"
+                  @click.prevent="updatePageView('policy')"
                   class="tc"
                 >
                   <small>{{lang.privacy_policy}}</small>
@@ -323,7 +217,7 @@ M482,21v-5.9L438,0v5.9L482,21z"
           <nav>
             <button
               class="campaign-btn-primary"
-              @click.prevent="pageView = 'beforeLogin'"
+              @click.prevent="updatePageView('beforeLogin')"
             >{{lang.close}}</button>
           </nav>
         </div>
@@ -334,7 +228,7 @@ M482,21v-5.9L438,0v5.9L482,21z"
           <nav>
             <button
               class="campaign-btn-primary"
-              @click.prevent="pageView = 'beforeLogin'"
+              @click.prevent="updatePageView('beforeLogin')"
             >{{lang.close}}</button>
           </nav>
         </div>
@@ -345,7 +239,7 @@ M482,21v-5.9L438,0v5.9L482,21z"
         >
           <div class="mobileMenuBar">
             <h4>{{ campaignData.competition.name }}</h4>
-            <a href="#" @click.prevent="mobileMenu = !mobileMenu">
+            <a href="#" @click.prevent="updateMobileMenu(!mobileMenu)">
               <i class="fas fa-bars" v-if="mobileMenu === false"></i>
               <i class="fal fa-times" v-else></i>
             </a>
@@ -353,25 +247,25 @@ M482,21v-5.9L438,0v5.9L482,21z"
           <nav :class="{active: mobileMenu === true}">
             <a
               :class="{active: pageView === 'home'}"
-              @click.prevent="handleHomeClick"
+              @click.prevent="handleHomeClick()"
               href="#"
             >{{lang.menu_home}}</a>
             <a
               v-if="campaignData.winners.length"
               :class="{active: pageView === 'winner'}"
-              @click.prevent="pageView = 'winner', mobileMenu = false"
+              @click.prevent="updatePageView('winner'), updateMobileMenu(false)"
               href="#"
             >{{lang.winners}}</a>
             <a
               v-if="campaignData.prizes.length"
               :class="{active: pageView === 'prize'}"
-              @click.prevent="pageView = 'prize', mobileMenu = false"
+              @click.prevent="updatePageView('prize'), updateMobileMenu(false)"
               href="#"
             >{{lang.prizes}}</a>
             <a
               v-if="transactions.length"
               :class="{active: pageView === 'transaction'}"
-              @click.prevent="pageView = 'transaction', mobileMenu = false"
+              @click.prevent="updatePageView('transaction'), updateMobileMenu(false)"
               href="#"
             >{{lang.entries}}</a>
           </nav>
@@ -402,7 +296,7 @@ M482,21v-5.9L438,0v5.9L482,21z"
                 href="#"
                 class="history"
                 v-if="transactions.length"
-                @click.prevent="pageView = 'transaction'"
+                @click.prevent="updatePageView('transaction')"
               >
                 <svg width="14.167" height="14.167" viewBox="0 0 14.167 14.167">
                   <path
@@ -433,25 +327,25 @@ M482,21v-5.9L438,0v5.9L482,21z"
                 <a
                   href="#"
                   v-if="hasDailyWinner"
-                  @click.prevent="winnerView = 'daily'"
+                  @click.prevent="updateWinnerView('daily')"
                   :class="{active: winnerView === 'daily'}"
                 >{{lang.prize_daily}}</a>
                 <a
                   href="#"
                   v-if="hasWeeklyWinner"
-                  @click.prevent="winnerView = 'weekly'"
+                  @click.prevent="updateWinnerView('weekly')"
                   :class="{active: winnerView === 'weekly'}"
                 >{{lang.prize_weekly}}</a>
                 <a
                   href="#"
                   v-if="hasMonthlyWinner"
-                  @click.prevent="winnerView = 'monthly'"
+                  @click.prevent="updateWinnerView('monthly')"
                   :class="{active: winnerView === 'monthly'}"
                 >{{lang.prize_monthly}}</a>
                 <a
                   href="#"
                   v-if="hasGrandWinner"
-                  @click.prevent="winnerView = 'grand'"
+                  @click.prevent="updateWinnerView('grand')"
                   :class="{active: winnerView === 'grand'}"
                 >{{lang.prize_grand}}</a>
               </nav>
@@ -494,25 +388,25 @@ M482,21v-5.9L438,0v5.9L482,21z"
                 <a
                   href="#"
                   v-if="hasDailyPrize"
-                  @click.prevent="prizeView = 'daily'"
+                  @click.prevent="updatePrizeView('daily')"
                   :class="{active: prizeView === 'daily'}"
                 >{{lang.prize_daily}}</a>
                 <a
                   href="#"
                   v-if="hasWeeklyPrize"
-                  @click.prevent="prizeView = 'weekly'"
+                  @click.prevent="updatePrizeView('weekly')"
                   :class="{active: prizeView === 'weekly'}"
                 >{{lang.prize_weekly}}</a>
                 <a
                   href="#"
                   v-if="hasMonthlyPrize"
-                  @click.prevent="prizeView = 'monthly'"
+                  @click.prevent="updatePrizeView('monthly')"
                   :class="{active: prizeView === 'monthly'}"
                 >{{lang.prize_monthly}}</a>
                 <a
                   href="#"
                   v-if="hasGrandPrize"
-                  @click.prevent="prizeView = 'grand'"
+                  @click.prevent="updatePrizeView('grand')"
                   :class="{active: prizeView === 'grand'}"
                 >{{lang.prize_grand}}</a>
               </nav>
@@ -663,227 +557,79 @@ M482,21v-5.9L438,0v5.9L482,21z"
 
 <script>
 // @ is an alias to /src
-import axios from "axios";
+import { mapState, mapActions, mapGetters, mapMutations } from "vuex";
 
 export default {
-  name: "Home",
+  name: "ThemeAlpha",
   components: {},
   data: function() {
-    return {
-      restricted: false,
-      mobileMenu: false,
-      countdownTimer: null,
-      campaignData: null,
-      loggedIn: null,
-      callback_url: null,
-      lang: null,
-      transactions: null,
-      pageView: "beforeLogin",
-      prizeView: "daily",
-      winnerView: "daily",
-      participateError: null,
-      is_terms: 0,
-      accept_terms: false,
-      currentPage: 1
-    };
+    return { dummy: true };
   },
   computed: {
-    hasMultiplePrizeTypes: function() {
-      return (
-        this.campaignData.prizes.map(function(prize) {
-          return prize.type;
-        }).length > 1
-      );
-    },
-    hasDailyPrize: function() {
-      return this.campaignData.prizes.some(function(prize) {
-        return prize.type === "daily";
-      });
-    },
-    hasWeeklyPrize: function() {
-      return this.campaignData.prizes.some(function(prize) {
-        return prize.type === "weekly";
-      });
-    },
-    hasMonthlyPrize: function() {
-      return this.campaignData.prizes.some(function(prize) {
-        return prize.type === "monthly";
-      });
-    },
-    hasGrandPrize: function() {
-      return this.campaignData.prizes.some(function(prize) {
-        return prize.type === "grand";
-      });
-    },
-    hasMultipleWinnerTypes: function() {
-      return (
-        this.campaignData.winners.map(function(winner) {
-          return winner.type;
-        }).length > 1
-      );
-    },
-    hasDailyWinner: function() {
-      return this.campaignData.winners.some(function(winner) {
-        return winner.type === "daily";
-      });
-    },
-    hasWeeklyWinner: function() {
-      return this.campaignData.winners.some(function(winner) {
-        return winner.type === "weekly";
-      });
-    },
-    hasMonthlyWinner: function() {
-      return this.campaignData.winners.some(function(winner) {
-        return winner.type === "monthly";
-      });
-    },
-    hasGrandWinner: function() {
-      return this.campaignData.winners.some(function(winner) {
-        return winner.type === "grand";
-      });
-    },
-    filteredPrize: function() {
-      var _this = this;
-      return this.campaignData.prizes.filter(function(prize) {
-        return prize.type === _this.prizeView;
-      });
-    },
-    filteredWinner: function() {
-      var _this = this;
-      return this.campaignData.winners.filter(function(winner) {
-        return winner.type === _this.winnerView;
-      });
-    },
-    transactionPageCount: function() {
-      return Math.ceil(this.transactions.length / 5);
-    },
-    displayedTdata: function() {
-      return this.paginatedData(this.transactions);
-    }
+    ...mapState([
+      "restricted",
+      "mobileMenu",
+      "countdownTimer",
+      "campaignData",
+      "loggedIn",
+      "callbackUrl",
+      "lang",
+      "transactions",
+      "pageView",
+      "prizeView",
+      "winnerView",
+      "participateError",
+      "isTerms",
+      "acceptTerms",
+      "currentPage"
+    ]),
+    ...mapGetters([
+      "hasMultiplePrizeTypes",
+      "hasDailyPrize",
+      "hasWeeklyPrize",
+      "hasMonthlyPrize",
+      "hasGrandPrize",
+      "hasMultipleWinnerTypes",
+      "hasDailyWinner",
+      "hasWeeklyWinner",
+      "hasMonthlyWinner",
+      "hasGrandWinner",
+      "filteredPrize",
+      "filteredWinner",
+      "transactionPageCount",
+      "displayedTdata"
+    ])
   },
   methods: {
-    clickPagination: function(page) {
-      this.currentPage = page;
-
-      if (document.getElementById("transaction_focus") != null)
-        document.getElementById("transaction_focus").focus();
-    },
-    paginatedData: function(data) {
-      var perPage = 5;
-      var from = this.currentPage * perPage - perPage;
-      var to = this.currentPage * perPage;
-      return data.slice(from, to);
-    },
-    showParticipateError: function(error) {
-      this.participateError = error;
-      if (this.participateError !== null) {
-        setTimeout(function() {
-          this.participateError = null;
-        }, 10000);
-      }
-    },
-    handleHomeClick: function() {
-      this.mobileMenu = false;
-
-      if (this.loggedIn == "1") this.pageView = "home";
-      else this.pageView = "beforeLogin";
-    },
-    getImageUrl: function(img_uri) {
-      if (img_uri.length > 0 && img_uri.charAt(0) != "/")
-        img_uri = "/" + img_uri;
-
-      return this.campaignData.aws_cdn_url + img_uri;
-    },
-    entryLogin: function() {
-      var _this = this;
-      if (this.is_terms == 1 && this.accept_terms == false) {
-        _this.showParticipateError(this.lang.error_accept_terms_conditions);
-        return false;
-      }
-
-      var postData = "id_site=" + this.campaignData.competition.id_site;
-      postData +=
-        "&id_competition=" + this.campaignData.competition.id_competition;
-      postData += "&email=" + this.campaignData.user.email;
-      postData += "&order_id=" + this.campaignData.order_id;
-      postData += "&mavtoken=" + this.campaignData.mavtoken;
-      if (this.is_terms == 1) {
-        var terms = null;
-
-        if (this.accept_terms == true) terms = 1;
-        else terms = 0;
-
-        postData += "&terms_cond=" + terms;
-      }
-
-      fetch(this.callback_url + "/user/purchaseSignup", {
-        method: "post",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: postData
-      })
-        .then(function(response) {
-          return response.json();
-        })
-        .then(function(data) {
-          if (data.error == 0) {
-            window.parent.postMessage({ action: "remove-orderid" }, "*");
-            window.location.reload();
-            return false;
-          } else {
-            _this.showParticipateError(data.msg);
-          }
-        });
-    },
-    continueShopping: function() {
-      window.parent.postMessage(
-        { id_widget: this.campaignData.id_widget, action: "close-popin" },
-        "*"
-      );
-      window.top.location.href = this.campaignData.continue_shopping_url;
-    },
-    acceptTerms: function() {
-      if (this.accept_terms == 1) this.accept_terms = 0;
-      else this.accept_terms = 1;
-
-      alert(this.accept_terms);
-    },
-    getFormattedTime: function(time) {
-      return ("0" + time).slice(-2);
-    },
-    showTimer: function() {
-      // var endDate = unix(this.campaignData.competition.date_end);
-      var _this = this;
-      setInterval(function() {
-        // var timeLeft = duration(endDate.diff(new Date));
-        var timeLeft = 32535435345;
-
-        // Reload on time end
-        if (timeLeft._milliseconds < 0) {
-          location.reload();
-        } else {
-          var formatted = {
-            hours: _this.getFormattedTime(timeLeft.hours()),
-            minutes: _this.getFormattedTime(timeLeft.minutes()),
-            seconds: _this.getFormattedTime(timeLeft.seconds())
-          };
-          _this.countdownTimer = formatted;
-        }
-      }, 1000);
-    }
+    ...mapMutations([
+      "updateRestricted",
+      "updateMobileMenu",
+      "updateCountdownTimer",
+      "updateCampaignData",
+      "updateLoggedIn",
+      "updateCallbackUrl",
+      "updateLang",
+      "updateTransactions",
+      "updatePageView",
+      "updatePrizeView",
+      "updateWinnerView",
+      "updateParticipateError",
+      "updateIsTerms",
+      "updateAcceptTerms",
+      "updateCurrentPage"
+    ]),
+    ...mapActions([
+      "getImageUrl",
+      "entryLogin",
+      "continueShopping",
+      "clickPagination",
+      "showParticipateError",
+      "handleHomeClick",
+      "handleAcceptTerms",
+      "showTimer"
+    ])
   },
   mounted: function() {
-    axios
-      .get(
-        "https://raw.githubusercontent.com/Logesh1987/gr-sp-vue/master/campaign.json"
-      )
-      .then(({ data }) => {
-        this.loggedIn = data.is_user_logged_in;
-        this.campaignData = data;
-        this.callback_url = data.callback_url;
-        this.lang = data.lang;
-        this.transactions = data.user_entries;
-      })
-      .catch(err => console.log(err));
     setTimeout(function() {
       document.querySelector("#sp-controller").classList.add("play");
       document
